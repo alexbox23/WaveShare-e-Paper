@@ -89,6 +89,10 @@
 #define UWORD   uint16_t
 #define UDOUBLE uint32_t
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * GPIOI config
 **/
@@ -115,5 +119,8 @@ UBYTE DEV_SPI_ReadData();
 UBYTE DEV_Module_Init(void);
 void DEV_Module_Exit(void);
 
-
+#ifdef __cplusplus
+}
 #endif
+
+#endif // _DEV_CONFIG_H_
